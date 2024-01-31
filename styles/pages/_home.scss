@@ -112,7 +112,8 @@ main {
   }
   &__img {
     @extend .mb-sm;
-    height: 300px;
+    // ここを300oxから571pxに変更
+    height: 500px;
     transition: box-shadow 0.5s ease 1.6s;
 
     &.inview {
@@ -124,7 +125,8 @@ main {
     }
 
     @include mq(lg) {
-      height: 400px;
+      // 写真長さ変更のため。height: 400px;からheight: 500px;に変更
+      height: 500px;
     }
 
     & > img {
@@ -265,8 +267,9 @@ main {
     height: 150px;
     margin-bottom: 5px;
 
+    // この値変更height: 335px;   から　　height: 800px;   に変更
     @include mq(lg) {
-      height: 335px;
+      height: 850px;     
     }
 
     & > img {
@@ -400,7 +403,7 @@ main {
     }
 
     &.twitter::before {
-        background-image: url(../images/twitter.svg);
+        background-image: url(../images/instagram.svg);
     }
     &.fb::before {
         background-image: url(../images/facebook.svg);
